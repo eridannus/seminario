@@ -13,7 +13,11 @@ const posts = await getSinglePage("posts");
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await render(post);
-const { title, description, image, date, tags } = post.data;
+const { title, description, image, date, tags, youtube_id } = post.data;
+
+const youtubeThumb = youtube_id
+  ? `https://img.youtube.com/vi/${youtube_id}/hqdefault.jpg`
+  : null;
 ---
 
 <section class="section">
@@ -31,7 +35,7 @@ const { title, description, image, date, tags } = post.data;
 
       <div class="col-12 mt-8 mb-2">
         {
-          image && (
+          image ? (
             <Image
               src={image}
               height={500}
@@ -39,7 +43,15 @@ const { title, description, image, date, tags } = post.data;
               alt={title}
               class="rounded-lg"
             />
-          )
+          ) : youtubeThumb ? (
+            <img
+              src={youtubeThumb}
+              width="1000"
+              height="500"
+              alt={title}
+              class="rounded-lg w-full"
+            />
+          ) : null
         }
       </div>
 
