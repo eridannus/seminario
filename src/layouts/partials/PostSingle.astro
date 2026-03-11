@@ -15,7 +15,11 @@ const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await render(post);
 const { title, description, image, date, tags, youtube_id } = post.data;
 
-const youtubeThumb = youtube_id
+const youtubeMaxThumb = youtube_id
+  ? `https://img.youtube.com/vi/${youtube_id}/maxresdefault.jpg`
+  : null;
+
+const youtubeHqThumb = youtube_id
   ? `https://img.youtube.com/vi/${youtube_id}/hqdefault.jpg`
   : null;
 ---
@@ -41,16 +45,18 @@ const youtubeThumb = youtube_id
               height={500}
               width={1000}
               alt={title}
-              class="rounded-lg"
+              class="rounded-lg w-full object-cover"
             />
-          ) : youtubeThumb ? (
-            <img
-              src={youtubeThumb}
-              width="1000"
-              height="500"
-              alt={title}
-              class="rounded-lg w-full"
-            />
+          ) : youtubeMaxThumb ? (
+            <div class="aspect-video w-full overflow-hidden rounded-lg">
+              <img
+                src={youtubeMaxThumb}
+                alt={title}
+                class="rounded-lg w-full h-full object-cover object-center"
+                loading="lazy"
+                onerror={`this.onerror=null;this.src='${youtubeHqThumb}';`}
+              />
+            </div>
           ) : null
         }
       </div>
