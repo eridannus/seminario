@@ -27,15 +27,18 @@ const { className, posts, fluid } = Astro.props;
         ? `https://img.youtube.com/vi/${post.data.youtube_id}/hqdefault.jpg`
         : null;
 
-      const targetUrl = post.data.youtube_url || `/blog/${post.id}`;
+      const targetUrl =
+        post.data.event_url || post.data.youtube_url || `/blog/${post.id}`;
+
+      const externalLink = !!(post.data.event_url || post.data.youtube_url);
 
       return (
         <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
           {(post.data.image || youtubeMaxThumb) && (
             <a
               href={targetUrl}
-              target={post.data.youtube_url ? "_blank" : undefined}
-              rel={post.data.youtube_url ? "noopener noreferrer" : undefined}
+              target={externalLink ? "_blank" : undefined}
+              rel={externalLink ? "noopener noreferrer" : undefined}
               class="rounded-lg block hover:text-primary overflow-hidden group"
             >
               <div class="aspect-video w-full overflow-hidden rounded-lg">
@@ -68,8 +71,8 @@ const { className, posts, fluid } = Astro.props;
           <h3 class="mb-4">
             <a
               href={targetUrl}
-              target={post.data.youtube_url ? "_blank" : undefined}
-              rel={post.data.youtube_url ? "noopener noreferrer" : undefined}
+              target={externalLink ? "_blank" : undefined}
+              rel={externalLink ? "noopener noreferrer" : undefined}
               class="block hover:text-primary transition duration-300"
             >
               {post.data.title}
