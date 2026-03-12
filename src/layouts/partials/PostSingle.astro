@@ -1,5 +1,4 @@
 ---
-import Share from "@/components/Share.astro";
 import SimilarPosts from "@/components/SimilarPosts.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
@@ -15,10 +14,8 @@ const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await render(post);
 const {
   title,
-  description,
   image,
   date,
-  tags,
   youtube_id,
   youtube_url,
   event_url,
@@ -35,7 +32,11 @@ const youtubeHqThumb = youtube_id
   : null;
 
 const primaryUrl = event_url || youtube_url || null;
-const primaryLabel = event_url ? "Acceder al evento" : youtube_url ? "Ver en YouTube" : null;
+const primaryLabel = event_url
+  ? "Acceder al evento"
+  : youtube_url
+    ? "Ver en YouTube"
+    : null;
 ---
 
 <section class="section">
@@ -98,29 +99,6 @@ const primaryLabel = event_url ? "Acceder al evento" : youtube_url ? "Ver en You
         <div class="content mb-16 text-left">
           <Content />
         </div>
-        {
-          tags.length > 0 && (
-            <div class="flex flex-wrap items-center justify-between">
-              <ul class="mr-4 mb-4 space-x-3">
-                {
-                  tags.map((tag: string) => (
-                    <li class="inline-block">
-                      <span class="block rounded-lg bg-light px-4 py-2 font-semibold text-dark text-sm">
-                        #{tag}
-                      </span>
-                    </li>
-                  ))
-                }
-              </ul>
-              <Share
-                className="social-share mb-4"
-                title={title}
-                description={description}
-                slug={post.id}
-              />
-            </div>
-          )
-        }
       </div>
     </article>
   </div>
