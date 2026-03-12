@@ -1,23 +1,10 @@
 ---
-title: What you need to know about Photography
-meta_title: ""
-description: "meta description"
-date: 2025-04-03T06:00:00+00:00
-image: "/images/posts/03.jpg"
-categories: ["art"]
-authors: ["Mark Dinn"]
-tags: ["diy", "toy"]
+title: "Del Concepto al Gráfico: El Rol del Diseño en la Divulgación de la Ciencia"
+date: 2025-11-05T12:00:00Z
+youtube_id: "zHzmEz2Xo8g"
+youtube_url: "https://www.youtube.com/watch?v=zHzmEz2Xo8g"
+speaker: "Mtro. Luis Arreguín Toral"
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-## Creative Design
-
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+Grabación de la conferencia «Del Concepto al Gráfico: El Rol del Diseño en la Divulgación de la Ciencia», impartida por el Mtro. Luis Manuel Arreguín Toral.
