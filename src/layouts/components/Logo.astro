@@ -21,7 +21,7 @@ const width = Number(String(logo_width).replace("px", ""));
 const height = Number(String(logo_height).replace("px", ""));
 ---
 
-<a href="/" class="navbar-brand block max-w-[78vw] sm:max-w-none">
+<a href="/" class="navbar-brand block w-full max-w-[72vw] sm:max-w-none">
   {
     src || logo ? (
       <Image
@@ -29,9 +29,9 @@ const height = Number(String(logo_height).replace("px", ""));
         height={height * 2}
         src={src ? src : logo}
         alt={title}
-        class="h-auto w-auto max-w-full"
+        class="h-auto w-auto max-w-full sm:max-w-none"
         style={{
-          maxWidth: "100%",
+          width: `${width}px`,
           height: "auto",
         }}
       />
