@@ -11,4 +11,4 @@ Próxima conferencia del seminario, **miércoles 25 de marzo de 2026 a las 12:00
 
 En esta sesión participará el Dr. José Fidel Urquiza Yllescas.
 
-Detalles por confirmar.
+Sala de Juicios Orales (edificio A-15).
