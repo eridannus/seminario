@@ -28,8 +28,8 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Seminario de Investigación | El Futuro del Diseño: Educación y Tecnología<br/>Coordinado por el <a href=\"https://mexchi.com\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Luis Martín Sánchez Adame</a><br/><a href=\"https://www.acatlan.unam.mx/\" target=\"_blank\" rel=\"noopener noreferrer\">Facultad de Estudios Superiores Acatlán</a><br/><a href=\"https://www.unam.mx/\" target=\"_blank\" rel=\"noopener noreferrer\">Universidad Nacional Autónoma de México</a>"
-  },
+"copyright": "Seminario de Investigación | El Futuro del Diseño: Educación y Tecnología<br/>Coordinado por el <a href=\"https://mexchi.com\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Luis Martín Sánchez Adame</a><br/>y la <a href=\"https://delta.cs.cinvestav.mx/~smendoza/\" target=\"_blank\" rel=\"noopener noreferrer\">Dra. Sonia Mendoza Chapa</a><br/><a href=\"https://www.acatlan.unam.mx/\" target=\"_blank\" rel=\"noopener noreferrer\">Facultad de Estudios Superiores Acatlán</a><br/><a href=\"https://www.unam.mx/\" target=\"_blank\" rel=\"noopener noreferrer\">Universidad Nacional Autónoma de México</a>"
+},
 
   "contactinfo": {
     "address": "",
