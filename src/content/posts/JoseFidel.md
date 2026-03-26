@@ -1,9 +1,9 @@
 ---
 title: "No Pelees con tu Agente Conversacional: El Secreto Está en el Prompt"
 date: 2026-03-25T12:00:00Z
-image: "/images/posts/jf.png"
+youtube_id: "2XsYpaeuH_A"
+youtube_url: "https://youtu.be/2XsYpaeuH_A"
 speaker: "Dr. José Fidel Urquiza Yllescas"
-upcoming: true
 draft: false
 ---
 
